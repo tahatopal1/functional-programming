@@ -65,7 +65,7 @@ public class Demo {
                 .sorted(Map.Entry.comparingByValue())
                 .collect(Collectors.toMap(Map.Entry::getKey
                         , Map.Entry::getValue, (v1, v2) -> v1, LinkedHashMap::new));
-        System.out.println(sortedMap);
+        System.out.println(sortedMap); // Sorted by value
 
         TreeMap<String, String> treeMap = new TreeMap<>(contacts); // shortcut | sorts by key
         System.out.println(treeMap);

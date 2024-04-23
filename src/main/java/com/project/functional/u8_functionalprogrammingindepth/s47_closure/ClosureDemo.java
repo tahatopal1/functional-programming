@@ -21,6 +21,12 @@ public class ClosureDemo {
 
         // Then if we print it once more, we can see the result is changed.
         printTask.doTask();
+
+        System.out.println("*****");
+
+        Runnable runnable = generateTask2();
+        runnable.run();
+        runnable.run();
     }
 
     static List<ITask> generateTask() {
@@ -29,5 +35,27 @@ public class ClosureDemo {
         ITask task2 = () -> System.out.println(x.get().intValue());
         return List.of(task1, task2);
     }
+
+    static Runnable generateTask2() {
+        Integer[] x = {0};
+
+        return () -> {
+            x[0] = x[0] + 1;
+            System.out.println(x[0]);
+        };
+    }
+
+    // You cannot have a primitive or primitive wrapper here. Because you cannot alter the reference.
+    // There are 3 different solution for having closures.
+
+    // 1) Array of integer; since only the item changes (so reference of array object doesn't change)
+    // ... it complies with having a final or an effectively final variable.
+
+    // 2) Encapsulating the value within an Object; Same logic with Array
+
+    // 3) Atomic integers (or variables); this one is effectively final meaning it ensures the
+    // ... thread-safety.
+
+
 
 }

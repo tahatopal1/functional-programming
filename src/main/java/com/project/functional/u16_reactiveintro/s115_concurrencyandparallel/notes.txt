@@ -1,0 +1,23 @@
+Concurrent Processing in Java
+
+This refers to the Java platform's ability to manage and execute multiple threads of execution within a single
+application, potentially on a single processor. The concurrency model in Java is primarily built around threads.
+Concurrency in Java allows for the development of highly responsive application that can handle multiple tasks
+simultaneously, such as waiting for user input, performing background computations or managing I/O operations.
+It's more about structuring your program to handle multiple tasks at once in an efficient way, rather than
+executing tasks simultaneously.
+
+Parallel Processing in Java
+
+Parallel processing in Java is achieved by utilizing the multiple cores of a CPU to perform several operations
+simultaneously, significantly speeding up computational tasks by breaking them into smaller chunks and processing
+those chunks simultaneously across multiple cores. Java provides several frameworks and APIs to facilitate parallel
+processing, including parallel streams and the Fork/Join Framework. These tools allow developers to write code that can
+automatically scale with the available hardware, performing computationally intensive operations in parallel and
+leveraging modern multicore processors to their full potential.
+
+
+In essence, Java's concurrency utilities help you write programs that can do many things at once (concurrently), like
+handling multiple network connections or user interactions. On the other hand, Java's parallel processing capabilities
+are designed to make computations faster by dividing work into independent tasks that can run simultaneously on
+different cores of a multicore processor.

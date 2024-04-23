@@ -19,7 +19,7 @@ public class StrategyDemo {
         stockList.add(new Stock("AAPL", 318.65, 8));
         stockList.add(new Stock("AMZ", 1866.74, 9));
 
-        // We use to create different strategies / methods
+        // We used to create different strategies / methods
         StockFilters.bySymbol(stockList, "AMZ").forEach(System.out::println);
         System.out.println("-------------------");
         StockFilters.byPriceAbove(stockList, 300).forEach(System.out::println);

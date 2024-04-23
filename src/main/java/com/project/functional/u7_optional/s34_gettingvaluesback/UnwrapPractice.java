@@ -49,7 +49,7 @@ public class UnwrapPractice {
         // ... just like .get() method
         // This one has capability to throw a particular type of Exception
         tryIt(optional, "Non-empty");
-        tryIt(emptyOptional, "Non-empty");
+        tryIt(emptyOptional, "Empty");
 
     }
 

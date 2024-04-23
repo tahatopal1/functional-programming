@@ -10,7 +10,7 @@ public class Demo {
         // ... input parameters.
 
         // 2) No side effects: Causes no side effects like modifying
-        // ... external state, global variables, input params, IO ops
+        // ... external state, global variables, input params, I/O ops
         // ... or calling other functions with side effects
 
         int result = add(multiply(2,3), multiply(3, 4));

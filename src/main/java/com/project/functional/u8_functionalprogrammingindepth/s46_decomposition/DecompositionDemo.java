@@ -7,7 +7,6 @@ public class DecompositionDemo {
     public static void main(String[] args) {
 
         // We'll find the length of one edge by using area
-
         IFunction<Square, Integer> getArea = Square::getArea;
         IFunction<Integer, Double> getEdgeLength = Math::sqrt;
 

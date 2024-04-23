@@ -85,10 +85,10 @@ public abstract class ListFun<T> {
     }
 
     public ListFun<T> add(int pos, T t) {
-        if (pos < 1 || pos > length()) {
+        if (pos < 0 || pos > length()) {
             throw new IndexOutOfBoundsException();
         }
-        if (pos == 1) {
+        if (pos == 0) {
             return this.tail().add(t);
         }
         return new Const<>(head(), tail().add(pos-1, t));
@@ -103,7 +103,6 @@ public abstract class ListFun<T> {
             temp = temp.tail();
             current = temp.head();
         }
-
     }
 
     public ListFun<T> removeByObject(T t) {
@@ -112,8 +111,7 @@ public abstract class ListFun<T> {
         } else if (t.equals(this.head())) {
             return tail();
         } else {
-            ListFun<T> removedList = tail().removeByObject(t);
-            return new Const<>(head(), removedList);
+            return new Const<>(head(), tail().removeByObject(t));
         }
     }
 

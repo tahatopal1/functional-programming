@@ -17,7 +17,7 @@ import java.util.stream.StreamSupport;
 
 public class Demo {
     public static void main(String[] args) throws IOException {
-        Path path = Paths.get("/Users/tahatopal/IdeaProjects/Java Functional Programming/src/main/java/com/project/functional/u12_collectors/s88_collectors1/EmployeeData.txt");
+        Path path = Paths.get("/Users/tahatopal/IdeaProjects/functional-programming/src/main/java/com/project/functional/u12_collectors/s88_collectors1/EmployeeData.txt");
         try (Stream<String> lines = Files.lines(path)){
             Stream<String> words = lines.flatMap(line -> Arrays.stream(line.split(",")));
             Spliterator<String> wordsSpliterator = words.spliterator();

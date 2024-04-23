@@ -1,0 +1,6 @@
+KEY DIFFERENCES:
+
+Order: `flatMap` does not guarantee the order of items, whereas `concatMap` does
+Performance: `flatMap` can subscribe to multiple Observables at once, potentially
+improving performance by leveraging parallelism. `concatMap` subscribes to each
+Observable one at a time, which can be slower but is necessary when order matters.

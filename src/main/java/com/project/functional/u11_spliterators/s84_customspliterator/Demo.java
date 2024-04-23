@@ -5,13 +5,14 @@ import com.project.functional.u10_streamsandparallelstreams.s64_streamsintro.Boo
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
+import java.util.List;
 import java.util.Spliterator;
 import java.util.stream.Stream;
 import java.util.stream.StreamSupport;
 
 public class Demo {
     public static void main(String[] args) throws IOException {
-        try (Stream<String> lines = Files.lines(Paths.get("/Users/tahatopal/IdeaProjects/Java Functional Programming/src/main/java/com/project/functional/u11_spliterators/s84_customspliterator/Books.txt"))) {
+        try (Stream<String> lines = Files.lines(Paths.get("/Users/tahatopal/IdeaProjects/functional-programming/src/main/java/com/project/functional/u11_spliterators/s84_customspliterator/Books.txt"))) {
             Spliterator<String> baseSpliterator = lines.spliterator();
             Spliterator<Book> spliterator  = new BookSpliterator(baseSpliterator);
             Stream<Book> stream = StreamSupport.stream(spliterator, false);

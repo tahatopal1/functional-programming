@@ -29,7 +29,7 @@ public class ImperativeVsDeclarativeDemo {
         // Also we are not mutating any states, all the mutation are managed underneath
         // JVM is smart enough to take care of data mutation under the sheet
         // So, declarative way is thread-safe, whereas imperative way is not
-        //  (since it is mutating the sumOfEvents variablef)
+        //  (since it is mutating the sumOfEvents variable)
 
     }
 }

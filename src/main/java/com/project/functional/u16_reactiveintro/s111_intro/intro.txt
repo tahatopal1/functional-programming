@@ -1,0 +1,25 @@
+Introduction to Reactive Programming
+~ Definition: Unlike its often negative connotation in everyday language, "reactive" in programming is a positive paradigm shift.
+~ Comparison to Other Paradigms: Reactive programming stands alongside procedural, functional, and object-oriented programming as a distinct paradigm.
+Transitioning between paradigms requires a shift in mindset but does not invalidate previous paradigms.
+
+The Reactive Manifesto
+~ Origin: Formulated by experienced developers and architects from leading tech companies.
+~ Purpose: Establishes guidelines for building modern, responsive systems that exceed user expectations.
+
+Core Principles:
+~ Responsive: Systems must provide timely responses to user interactions.
+~ Resilient: Systems gracefully handle errors and failures.
+~ Elastic: Systems adjust to varying loads without manual intervention.
+~ Message-Driven: Systems ensure loose coupling and asynchronous for more responsive interactions.
+
+Practical Applications of Reactive Principles
+~ Responsiveness Strategies: Parallel processing or asynchronous request handling to maintain user engagement.
+~ Resilience in Practice: Implementing backup plans like using caches or secondary databases to mitigate system failures.
+~ Elasticity Examples: Cloud, distributed systems, and microservices can dynamically scale to handle increased load.
+~ Message-Driven Communication: Preferring asynchronous over synchronous communication to enhance system responsiveness and decoupling.
+
+Introduction to ReactiveX and RxJava
+~ ReactiveX: A comprehensive library for asynchronous programming with observable streams, initiated by Netflix.
+~ RxJava: A JVM implementation of ReactiveX, focusing on making systems reactive with version 3.x being the latest at the time of the course.
+~ Learning Curve: Emphasizes that understanding and adopting ReactiveX and RxJava may initially be challenging but becomes more intuitive with practice.

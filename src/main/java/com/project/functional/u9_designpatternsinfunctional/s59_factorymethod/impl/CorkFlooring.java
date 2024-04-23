@@ -5,6 +5,6 @@ import com.project.functional.u9_designpatternsinfunctional.s59_factorymethod.Fl
 public class CorkFlooring implements Flooring {
     @Override
     public void installation() {
-        System.out.println("The wooden cork is installed!");
+        System.out.println("The cork flooring is installed!");
     }
 }

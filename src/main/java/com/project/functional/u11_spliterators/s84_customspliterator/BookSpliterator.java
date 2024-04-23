@@ -21,7 +21,7 @@ public class BookSpliterator implements Spliterator<Book> {
     @Override
     public boolean tryAdvance(Consumer<? super Book> action) {
         if (this.baseSpliterator.tryAdvance(name -> this.name = name) &&
-        this.baseSpliterator.tryAdvance(author -> this.author = author) &&
+        this.baseSpliterator.tryAdvance(author -> this. author = author) &&
         this.baseSpliterator.tryAdvance(genre -> this.genre = genre) &&
         this.baseSpliterator.tryAdvance(rating -> this.rating = Double.parseDouble(rating))) {
             action.accept(new Book(this.name, this.author, this.genre, this.rating));
