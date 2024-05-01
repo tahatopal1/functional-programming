@@ -1,4 +1,4 @@
-package com.project.functional.u22_concurrencyparallelization.s147_howto;
+package com.project.functional.u21_concurrencyparallelization.s147_howto;
 
 import io.reactivex.rxjava3.core.Observable;
 

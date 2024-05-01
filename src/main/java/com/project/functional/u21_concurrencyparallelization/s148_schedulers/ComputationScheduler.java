@@ -1,4 +1,4 @@
-package com.project.functional.u22_concurrencyparallelization.s148_schedulers;
+package com.project.functional.u21_concurrencyparallelization.s148_schedulers;
 
 import io.reactivex.rxjava3.core.Observable;
 import io.reactivex.rxjava3.schedulers.Schedulers;
@@ -21,24 +21,24 @@ public class ComputationScheduler {
                                 "Sushi", "Taco", "Fish&Chips", "Burrito"))
                 .subscribeOn(Schedulers.computation());
 
-        src.subscribe(e -> compute());
-        src.subscribe(e -> compute());
-        src.subscribe(e -> compute());
-        src.subscribe(e -> compute());
-        src.subscribe(e -> compute());
-        src.subscribe(e -> compute());
-        src.subscribe(e -> compute());
-        src.subscribe(e -> compute());
-        src.subscribe(e -> compute());
-        src.subscribe(e -> compute());
-        src.subscribe(e -> compute());
-        src.subscribe(e -> compute());
+        src.subscribe(e -> compute(e));
+        src.subscribe(e -> compute(e));
+        src.subscribe(e -> compute(e));
+        src.subscribe(e -> compute(e));
+        src.subscribe(e -> compute(e));
+        src.subscribe(e -> compute(e));
+        src.subscribe(e -> compute(e));
+        src.subscribe(e -> compute(e));
+        src.subscribe(e -> compute(e));
+        src.subscribe(e -> compute(e));
+        src.subscribe(e -> compute(e));
+        src.subscribe(e -> compute(e));
 
         Thread.sleep(14000);
     }
 
-    private static void compute() throws InterruptedException {
+    private static void compute(String str) throws InterruptedException {
         Thread.sleep(1000);
-        System.out.println("Computation done by: " + Thread.currentThread().getName());
+        System.out.println(str + " computation done by: " + Thread.currentThread().getName());
     }
 }

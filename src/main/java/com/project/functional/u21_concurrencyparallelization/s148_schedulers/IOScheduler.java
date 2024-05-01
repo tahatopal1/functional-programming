@@ -1,10 +1,9 @@
-package com.project.functional.u22_concurrencyparallelization.s148_schedulers;
+package com.project.functional.u21_concurrencyparallelization.s148_schedulers;
 
 import io.reactivex.rxjava3.core.Observable;
 import io.reactivex.rxjava3.schedulers.Schedulers;
 
 import java.util.Arrays;
-import java.util.Optional;
 
 public class IOScheduler {
 

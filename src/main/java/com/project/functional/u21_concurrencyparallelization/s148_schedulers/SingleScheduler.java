@@ -1,4 +1,4 @@
-package com.project.functional.u22_concurrencyparallelization.s148_schedulers;
+package com.project.functional.u21_concurrencyparallelization.s148_schedulers;
 
 import io.reactivex.rxjava3.core.Observable;
 import io.reactivex.rxjava3.schedulers.Schedulers;
@@ -9,7 +9,7 @@ public class SingleScheduler {
 
     // Guarantees that all tasks are scheduled on the same thread.
     // This is useful for operations that need to be executed in order
-    // ... but d not require running on the main thread. It's also used
+    // ... but do not require running on the main thread. It's also used
     // ... to avoid concurrency issues without using locks or synchronization
     // However, it decreases the throughput in return.
 
