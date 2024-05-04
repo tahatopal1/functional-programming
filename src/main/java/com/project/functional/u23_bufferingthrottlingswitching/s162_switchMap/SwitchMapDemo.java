@@ -6,6 +6,10 @@ import java.util.concurrent.ThreadLocalRandom;
 import java.util.concurrent.TimeUnit;
 
 public class SwitchMapDemo {
+
+    // Similar to flatmap
+    // It only subscribes to the last emitted observable and dispose the previous ones.
+
     public static void main(String[] args) throws InterruptedException {
 
         Observable<String> source = Observable.just("John", "Lily", "Emma", "Jack", "Rob")

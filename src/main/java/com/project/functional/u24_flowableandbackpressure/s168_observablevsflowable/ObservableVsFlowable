@@ -1,0 +1,14 @@
+Observable vs Flowable
+
+Observable
+    ¬  Backpressure: Doesn't handle backpressure by default, meaning it can overwhelm downstream
+    consumers if they can't keep up.
+    ¬  Usage: Best suited for event-driven data streams, like user interface events, where
+    backpressure isn't an issue
+
+Flowable:
+    ¬  Backpressure: Supports backpressure, providing different strategies (Buffer, Drop, etc.)
+    to overwhelming data flows.
+    ¬  Usage: Ideal for handling high-throughput or potentially overwhelming data streams,
+    as it can prevent subscribers from being flooded with more data than they can handle.
+    ¬  When source is emitting large amount of data it's a more suitable choice.
